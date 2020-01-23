@@ -6,6 +6,7 @@ import ProviderController from './app/controllers/ProviderController';
 import UserController from './app/controllers/UserController';
 import SessionController from './app/controllers/SessionController';
 import FileController from './app/controllers/FileController';
+import AppointmentController from './app/controllers/AppointmentController';
 
 import authMiddleware from './app/middlewares/auth';
 
@@ -124,5 +125,13 @@ routes.get('/providers', ProviderController.index);
  *     summary: "Upload a picture"
  */
 routes.post('/files', upload.single('file'), FileController.store);
+
+/**
+ * @swagger
+ * /appointments
+ *   post:
+ *     summary: "Create new appointment"
+ */
+routes.post('/appointments', AppointmentController.store);
 
 export default routes;
