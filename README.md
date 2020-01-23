@@ -2,10 +2,10 @@
   Learning Project: GoBarber
 </h1>
 <p align="center">
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/marceloschreiber/rocketseat-gobarber">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/marceloschreiber/gobarber">
 
-  <a href="https://github.com/marceloschreiber/rocketseat-gobarber/commits/master">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/marceloschreiber/rocketseat-gobarber">
+  <a href="https://github.com/marceloschreiber/gobarber/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/marceloschreiber/gobarber">
   </a>
 
   <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
