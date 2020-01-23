@@ -1,3 +1,5 @@
 import app from './app';
 
-app.listen(3333);
+const port = 3333;
+app.listen(port);
+console.log(`Server started at port ${port}`);

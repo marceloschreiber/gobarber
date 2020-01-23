@@ -1,6 +1,7 @@
 import express from 'express';
 import path from 'path';
 
+import swagger from './swagger';
 import routes from './routes';
 
 import './database';
@@ -19,6 +20,7 @@ class App {
       '/files',
       express.static(path.resolve(__dirname, '..', 'tmp', 'uploads'))
     );
+    this.server.use(...swagger);
   }
 
   routes() {
