@@ -160,4 +160,12 @@ routes.get('/schedule', ScheduleControler.index);
  */
 routes.get('/notifications', NotificationController.index);
 
+/**
+ * @swagger
+ * /notifications/{id}:
+ *   put:
+ *     summary: "Return a modification and mark it as read"
+ */
+routes.get('/notifications/:id', NotificationController.update);
+
 export default routes;
