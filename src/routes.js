@@ -8,6 +8,7 @@ import SessionController from './app/controllers/SessionController';
 import FileController from './app/controllers/FileController';
 import AppointmentController from './app/controllers/AppointmentController';
 import ScheduleControler from './app/controllers/ScheduleController';
+import NotificationController from './app/controllers/NotificationController';
 
 import authMiddleware from './app/middlewares/auth';
 
@@ -150,5 +151,13 @@ routes.get('/appointments', AppointmentController.index);
  *     summary: "List all appointments for a provider"
  */
 routes.get('/schedule', ScheduleControler.index);
+
+/**
+ * @swagger
+ * /notifications:
+ *   get:
+ *     summary: "List all notifications"
+ */
+routes.get('/notifications', NotificationController.index);
 
 export default routes;
