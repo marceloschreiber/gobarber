@@ -7,6 +7,7 @@ import UserController from './app/controllers/UserController';
 import SessionController from './app/controllers/SessionController';
 import FileController from './app/controllers/FileController';
 import AppointmentController from './app/controllers/AppointmentController';
+import ScheduleControler from './app/controllers/ScheduleController';
 
 import authMiddleware from './app/middlewares/auth';
 
@@ -138,8 +139,16 @@ routes.post('/appointments', AppointmentController.store);
  * @swagger
  * /appointments
  *   get:
- *     summary: "List all appointments"
+ *     summary: "List all appointments for a user"
  */
 routes.get('/appointments', AppointmentController.index);
+
+/**
+ * @swagger
+ * /schedule
+ *   get:
+ *     summary: "List all appointments for a provider"
+ */
+routes.get('/schedule', ScheduleControler.index);
 
 export default routes;
