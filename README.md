@@ -19,9 +19,15 @@ Project done while I was learning Node and express to create a simple backend sy
 
 ### Database
 
-This project uses the [PostgreSQL](https://www.postgresql.org/) database. To simplify the setup you can use docker:
+This project uses:
+
+- [PostgreSQL](https://www.postgresql.org/)
+- [MongoDB](https://www.mongodb.com/)
+
+To simplify the setup you can use docker:
 
 - `docker run --name postgre -e POSTGRES_PASSWORD=docker -d -p 5432:5432 postgres`
+- `docker run --name mongo -p 27017:27017 -d -t mongo`
 
 Then run all the migrations using:
 
