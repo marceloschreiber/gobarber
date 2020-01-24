@@ -146,6 +146,14 @@ routes.get('/appointments', AppointmentController.index);
 
 /**
  * @swagger
+ * /appointments/{id}:
+ *   delete:
+ *     summary: "List all appointments for a user"
+ */
+routes.delete('/appointments/:id', AppointmentController.delete);
+
+/**
+ * @swagger
  * /schedule:
  *   get:
  *     summary: "List all appointments for a provider"
