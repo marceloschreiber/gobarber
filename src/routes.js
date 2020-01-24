@@ -129,7 +129,7 @@ routes.post('/files', upload.single('file'), FileController.store);
 
 /**
  * @swagger
- * /appointments
+ * /appointments:
  *   post:
  *     summary: "Create new appointment"
  */
@@ -137,7 +137,7 @@ routes.post('/appointments', AppointmentController.store);
 
 /**
  * @swagger
- * /appointments
+ * /appointments:
  *   get:
  *     summary: "List all appointments for a user"
  */
@@ -145,7 +145,7 @@ routes.get('/appointments', AppointmentController.index);
 
 /**
  * @swagger
- * /schedule
+ * /schedule:
  *   get:
  *     summary: "List all appointments for a provider"
  */
